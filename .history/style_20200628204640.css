@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap');
+
+#home{
+  background-image: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)),
+  url('/img/home.png');
+  background-size: cover;
+}
+.head-logo{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.875rem;
+  color: white!important;
+  border: 2px solid white;
+}
+.head-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff!important;
+}
+.navigation{
+  border-bottom: 3px solid white;
+}
+.head-text{
+  font-family: 'Playfair Display SC', sans-serif;
+  font-weight: bold;
+  font-size: 3.125rem;
+  color: #FF49C8;
+}
+.head-sub-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.head-btn{
+  font-family: 'Playfair Display SC', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 1.875rem;
+  cursor: pointer;
+}
+h3{
+  font-family: 'Playfair Display SC', sans-serif;
+  font-weight: bold;
+  font-size: 1.75rem;
+  letter-spacing: 0.8px;
+}
+.hr{
+  width: 75px;
+  border: 3px solid #FF49C8;
+  float: left;
+  margin-top: 0;
+}
+.about-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+#services{
+  background-color: #EEEDEC;
+}
+h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+h5{
+  font-family: 'Playfair Display SC', sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  letter-spacing: 0.8px;
+}
+.services-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.projects{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.projects-link{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+/* testimonial  */
+
+#testimonials{
+  background: #F4F3F2;
+}
+.card-image{
+  position: absolute;
+  top:0;
+  left: 100px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.card-section{
+  position:relative
+}
+
+.card-dark{
+  background-color:#000;
+  color: #fff;
+}
+
+.btn-pink{
+  background-color: #FF49C8;
+  color: #fff;
+  font-family: 'Playfair Display SC',sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 1.875rem;
+  cursor: pointer;
+
+}
+
+
+/* contact  */
+.contact-form{
+  background: #F2F2F2;
+  ;
+}
+.text-pink{
+  color: #FF49C8;
+}
+.contact-pad{
+  padding: 2rem 3rem;
+}
+
+@media (max-width: 575.98px) {
+  .contact-pad {
+    padding: 1rem 1rem;
+  }
+}
+
+/* footer  */
+.footer-content{
+  background-color: #000;
+}
+
+.copyright{
+  background-color: #FF49C8;
+}
+
+.projects-link{
+  color: #FF49C8;
+  background: transparent!important;
+  font-weight: 800;
+}
+.projects-link:active {
+  color: #FF49C8;
+  background: transparent !important;
+  font-weight: 800;
+}
