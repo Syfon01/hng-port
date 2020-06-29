@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap');
 
+/*----------------------------------------------HOME SECTION----------------------------------------------*/
 #home{
-  background-image: 
-  linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)),
-  url('/img/home.png');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)), url('/img/home.png');
   background-size: cover;
 }
 .head-logo{
@@ -40,6 +39,10 @@
   border-radius: 1.875rem;
   cursor: pointer;
 }
+/*----------------------------------------------HOME SECTION----------------------------------------------*/
+
+
+/*----------------------------------------------ABOUT SECTION----------------------------------------------*/
 h3{
   font-family: 'Playfair Display SC', sans-serif;
   font-weight: bold;
@@ -57,6 +60,10 @@ h3{
   font-weight: 500;
   font-size: 1rem;
 }
+/*----------------------------------------------ABOUT SECTION----------------------------------------------*/
+
+
+/*----------------------------------------------SERVICES SECTION----------------------------------------------*/
 #services{
   background-color: #EEEDEC;
 }
@@ -75,22 +82,31 @@ h6{
   font-family: 'Playfair Display SC', sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  letter-spacing: 0.8px;
-}
-p.testimonial-name{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-}
-p.testimonial{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 0.8rem;
 }
 .services-text{
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.8rem;
+}
+/*----------------------------------------------SERVICES SECTION----------------------------------------------*/
+
+
+/*----------------------------------------------PORTFOLIO SECTION----------------------------------------------*/
+.projects-link{
+  color: #000;
+  background: transparent!important;
+  font-weight: 800;
+}
+.projects-link:active {
+  color: #FF49C8!important;
+  background: transparent !important;
+  font-weight: 800;
+}
+.nav-item>.nav-link.active {
+  color: #FF49C8!important;
+}
+.nav-pills .nav-link.active{
+  color: #FF49C8 !important;
 }
 .projects{
   font-family: 'Montserrat', sans-serif;
@@ -102,10 +118,26 @@ p.testimonial{
   font-weight: 500;
   font-size: 1rem;
 }
+.project-bottom{
+  padding: 10px;
+  background: #F2F2F2;
+}
+.project-name{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.project-owner{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+/*----------------------------------------------PORTFOLIO SECTION----------------------------------------------*/
 
 
-/* testimonial  */
-
+/*----------------------------------------------TESTIMONIAL SECTION----------------------------------------------*/
 #testimonials{
   background: #F4F3F2;
 }
@@ -117,16 +149,23 @@ p.testimonial{
   height: 150px;
   text-align: center;
 }
-
 .card-section{
   position: relative;
 }
-
 .card-dark{
   background-color:#000;
   color: #fff;
 }
-
+p.testimonial-name{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+p.testimonial{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
 .btn-pink{
   background-color: #FF49C8;
   color: #fff;
@@ -135,11 +174,11 @@ p.testimonial{
   font-size: 1rem;
   border-radius: 1.875rem;
   cursor: pointer;
-
 }
+/*----------------------------------------------TESTIMONIAL SECTION----------------------------------------------*/
 
 
-/* contact  */
+/*----------------------------------------------CONTACT SECTION----------------------------------------------*/
 .contact-form{
   background: #F2F2F2;
   ;
@@ -160,14 +199,10 @@ h5.contact{
   font-weight: 500;
   font-size: 1rem;
 }
+/*----------------------------------------------CONTACT SECTION----------------------------------------------*/
 
-@media (max-width: 575.98px) {
-  .contact-pad {
-    padding: 1rem 1rem;
-  }
-}
 
-/* footer  */
+/*----------------------------------------------FOOTER SECTION----------------------------------------------*/
 .footer-content{
   background-color: #000;
 }
@@ -195,25 +230,147 @@ a.footer, p.footer{
   font-weight: normal;
   color: #FFFFFF;
 }
-
 .copyright{
   background-color: #FF49C8;
 }
 
-.projects-link{
-  color: #000;
-  background: transparent!important;
-  font-weight: 800;
-}
-.projects-link:active {
-  color: #FF49C8!important;
-  background: transparent !important;
-  font-weight: 800;
+/*----------------------------------------------FOOTER SECTION----------------------------------------------*/
+
+/*----------------------------------------------MEDIA QUERIES----------------------------------------------*/
+
+@media (max-width: 991.98px){
+  /* SERVICES SECTION */
+  div.first{
+    margin-right: 10px;
+  }
+  .second{
+    margin-right: 5px;
+  }
+  .second-1{
+    margin-right: 15px;
+  }
+  /* TESTIMONIAL SECTION */
+  .card-image{
+    position: absolute;
+    top:0;
+    left: 35px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+  }
+    /* CONTACT SECTION */
+  .contact-pad {
+    padding: 1rem 1.2rem;
+  }
 }
 
-.nav-item>.nav-link.active {
-  color: #FF49C8!important;
+@media (max-width: 738px){
+    /* SERVICES SECTION */
+    .service-list{
+      display: flex;
+      flex-direction: column;
+    }
+    h4{
+      font-size: 0.9rem;
+    }
+    h6{
+      font-size: 1.1rem;
+    }
+    .first, .fifth{
+      margin-bottom: 20px;
+    }
+    .second, .second-1{
+      margin-right: 20px;
+    }
+    .services-text{
+      font-size: 0.9rem;
+    }
 }
-.nav-pills .nav-link.active{
-  color: #FF49C8 !important;
+
+@media (max-width: 575.98px) {
+  /* HOME SECTION */
+  .head-logo{
+    font-size: 1.3rem;
+  }
+  .head-text{
+    font-size: 2.125rem;
+    color: #FF49C8;
+  }
+  .head-sub-text{
+    font-size: 1rem;
+  }
+
+  /* ABOUT SECTION */
+  h3{
+    font-size: 1.1rem;
+  }
+  .about-text{
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  /* SERVICES SECTION */
+  .service-list{
+    display: flex;
+    flex-direction: column;
+  }
+  h4{
+    font-size: 0.9rem;
+  }
+  h6{
+    font-size: 1.1rem;
+  }
+  .first, .fifth{
+    margin-bottom: 20px;
+  }
+  .second, .second-1{
+    margin-right: 20px;
+  }
+  .services-text{
+    font-size: 0.9rem;
+  }
+
+  /* TESTIMOIAL SECTION */
+  .card-image{
+    left: 70px;
+  }
+
+  /* CONTACT SECTION */
+  .contact-pad{
+    padding: 2rem 0.4rem;
+  }
+
+  /* FOOTER SECTION */
+  a.footer, p.footer, .footer-2, .copyright{
+    font-size: 0.7rem;
+  }
 }
+
+@media (max-width: 414px) {
+  /* TESTIMOIAL SECTION */
+  .card-image{
+    left: 115px;
+  }
+}
+
+@media (max-width: 376px) {
+  /* TESTIMOIAL SECTION */
+  .card-image{
+    left: 95px;
+  }
+}
+
+@media (max-width: 362px) {
+  /* TESTIMOIAL SECTION */
+  .card-image{
+    left: 80px;
+  }
+}
+
+@media (max-width: 322px) {
+  /* TESTIMOIAL SECTION */
+  .card-image{
+    left: 70px;
+  }
+}
+/*----------------------------------------------MEDIA QUERIES----------------------------------------------*/
